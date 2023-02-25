@@ -7,6 +7,9 @@ module.exports = function (defaults) {
     autoImport: {
       watchDependencies: ['my-addon'],
     },
+    'ember-cli-addon-docs': {
+      documentingAddonAt: '../my-addon',
+    },
   });
 
   const { maybeEmbroider } = require('@embroider/test-setup');
