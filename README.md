@@ -35,3 +35,4 @@
   - https://ember-learn.github.io/ember-cli-addon-docs/docs/standalone-apps
 - When running `npm start`, get the following error when going to the app:
   ![Error message](ember-cli-addon-docs-error01.png)
+  - Fixed this by downgrading `ember-data` from "4.9.1" to "4.4.1" (version that's installed in `ember-cli-addon-docs`).
