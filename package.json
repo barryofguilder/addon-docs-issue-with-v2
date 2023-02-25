@@ -7,6 +7,7 @@
   "author": "",
   "scripts": {
     "build": "npm run build --workspace my-addon",
+    "docs": "npm start --workspace test-app",
     "lint": "npm run lint --workspaces --if-present",
     "lint:fix": "npm run lint:fix --workspaces --if-present",
     "prepare": "npm run build",
