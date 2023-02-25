@@ -33,6 +33,11 @@
   - https://ember-learn.github.io/ember-cli-addon-docs/docs/quickstart
 - Follow step 5 in the docs to set it up in a standalone app instead of addon:
   - https://ember-learn.github.io/ember-cli-addon-docs/docs/standalone-apps
-- When running `npm start`, get the following error when going to the app:
+- When running `yarn start`, get the following error when going to the app:
   ![Error message](ember-cli-addon-docs-error01.png)
-  - Fixed this by downgrading `ember-data` from "4.9.1" to "4.4.1" (version that's installed in `ember-cli-addon-docs`).
+  - The issue seems to be the newer versions of `ember-data`. Here is what works and doesn't work:
+    - `4.12.0-beta.1` - throws error
+    - `4.11.1` - throws error
+    - `4.9.1` - throws error
+    - `4.8.6` - throws error
+    - `4.7.3` - **WORKS!**
